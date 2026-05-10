@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD SHARMIII 💖</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/catprop.jpg">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Dancing+Script:wght@700&family=Shadows+Into+Light&family=Nunito:wght@400;700;900&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=7">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loader-content">
+            <img src="assets/catprop.jpg" alt="Loading..." class="loader-cat-prop" />
+            <h1 class="loader-text">Happy Birthday Muttakosu! 🥬💖</h1>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Background -->
+    <video class="bg-video" src="assets/animevieo.mp4" autoplay loop muted playsinline></video>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="assets/bgmusic.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle" class="music-btn">
+        <span class="music-icon">💿</span>
+        <span class="music-text">Play Music</span>
+    </button>
+
+    <!-- Bullet Journal Background Overlay -->
+    <div class="bujo-bg"></div>
+    
+    <!-- Glowing Purple Butterflies -->
+    <div class="butterflies-container">
+        <div class="css-butterfly fb-1">
+            <div class="wing left-wing"></div>
+            <div class="body"></div>
+            <div class="wing right-wing"></div>
+        </div>
+        <div class="css-butterfly fb-2">
+            <div class="wing left-wing"></div>
+            <div class="body"></div>
+            <div class="wing right-wing"></div>
+        </div>
+    </div>
+
+    <div class="paw-trail">
+        <div class="paw p1">🐾</div>
+        <div class="paw p2">🐾</div>
+        <div class="paw p3">🐾</div>
+        <div class="paw p4">🐾</div>
+        <div class="paw p5">🐾</div>
+        <div class="paw p6">🐾</div>
+    </div>
+
+    <!-- Hanging Clothesline for aesthetic -->
+    <div class="clothesline">
+        <div class="line"></div>
+        <div class="hanging-item h1">🐟</div>
+        <div class="hanging-item h2">🐈</div>
+        <div class="hanging-item h3">🧶</div>
+    </div>
+
+    <main class="scrapbook">
+        
+        <!-- Famous Cat Meme Stickers (Insta-famous) -->
+        <div class="meme-sticker ms-1"><img src="https://media.tenor.com/2Xy-p-P0qC8AAAAi/happy-cat-happy-happy-cat.gif" alt="Happy Cat"></div>
+        <div class="meme-sticker ms-2"><img src="https://media.tenor.com/tHqf94bS6A8AAAAi/pop-cat-pop.gif" alt="Pop Cat"></div>
+        <div class="meme-sticker ms-3"><img src="https://media.tenor.com/LhB2Q3P735wAAAAi/cat-huh.gif" alt="Huh Cat"></div>
+        <div class="meme-sticker ms-4"><img src="https://media.tenor.com/M1K341K1YfMAAAAi/crying-cat-thumbs-up.gif" alt="Crying Cat"></div>
+        <div class="meme-sticker ms-5"><img src="https://media.tenor.com/HqGz8W22EPEAAAAi/maxwell-cat.gif" alt="Maxwell Cat"></div>
+        
+        <!-- INTRO SECTION -->
+        <section class="section intro-section">
+            <div class="bujo-paper title-paper gs-reveal">
+                <div class="washi grid-washi top-left"></div>
+                <div class="washi pink-washi bottom-right"></div>
+                <div class="pushpin top-center"></div>
+                
+                <h1 class="main-title" style="position: relative;">
+                    Happy Birthday<br><span class="name-highlight">Sharmila!</span>
+                    <img src="assets/catprop.jpg" alt="Cat Prop" class="cat-prop-sticker">
+                </h1>
+                <p class="subtitle">Some Souls Just Feel Like Home 💫</p>
+                
+                <!-- Birthday Stats -->
+                <div class="birthday-stats gs-reveal">
+                    
+                    <span class="stat-badge">📅 15th May</span>
+                    
+                
+                </div>
+                
+                <!-- Instagram Link -->
+                <div class="insta-profile gs-reveal">
+                    <a href="https://www.instagram.com/_.shxm_zz._/?utm_source=ig_web_button_share_sheet" target="_blank" class="insta-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="insta-icon">
+                        <span>@_.shxm_zz._</span>
+                    </a>
+                </div>
+
+                <!-- Doodle Heart -->
+                <svg class="doodle doodle-heart" viewBox="0 0 100 100">
+                    <path d="M50 85 C20 60, 10 30, 25 15 C40 0, 50 20, 50 20 C50 20, 60 0, 75 15 C90 30, 80 60, 50 85 Z" fill="none" stroke="#ff8b94" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="scroll-container gs-reveal">
+                <p class="scroll-hint-text">Scroll down for magic</p>
+                <div class="neon-arrows">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- HER PICTURE SECTION -->
+        <section class="section layout-row" id="first-card-section">
+            <div class="col" id="first-card-photo">
+                <div class="photo-frame vintage-frame">
+                    <div class="photo-corner tl"></div><div class="photo-corner tr"></div>
+                    <div class="photo-corner bl"></div><div class="photo-corner br"></div>
+                    
+                    <div class="her-picture-placeholder">
+                        <img src="assets/sharmila.png" alt="Sharmila's Photo" onerror="this.src='https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'" />
+                    </div>
+                    <div class="photo-caption">To my favorite human, 🌷</div>
+                    
+                    <!-- Doodle Arrow pointing at her -->
+                    <svg class="doodle doodle-arrow" viewBox="0 0 100 100">
+                        <path d="M10 90 Q40 40 80 20" fill="none" stroke="#ff8b94" stroke-width="4" stroke-linecap="round"/>
+                        <polygon points="80,20 65,15 75,35" fill="#ff8b94"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="col" id="first-card-note">
+                <div class="torn-paper lined-paper">
+                    <div class="paperclip"></div>
+                    <h2>Happy Birthday, thozhi💕🎂</h2>
+                    <p>You somehow manage to be the calm, the chaos, and the comedy all at once 😭💖
+Every conversation with you turns into a core memory for me. Life honestly feels lighter, louder, and way more fun because you’re in it.
+
+You deserve the kind of happiness you give to everyone around you. Never forget how special your presence is, okay?
+
+My forever comfort person, favorite troublemaker, and bestie all in one 😌✨</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FIRST MEET SECTION -->
+        <section class="section layout-row reverse">
+            <div class="col gs-reveal">
+                <div class="torn-paper graph-paper pastel-blue">
+                    <div class="washi grid-washi bottom-left"></div>
+                    <h2>Where it all began... 🕰️</h2>
+                    <p><strong>📅 Date:</strong> <span style="color:#ff8b94">24 Sept 2025</span><br>
+                        <p><strong>🎉 Event:</strong> <span style="color:#ff8b94">HACKTHON 2025</span></p>
+                      
+                    <p>I still clearly remember this day! Little did I know I was meeting the biggest clown who would eventually become my absolute bestie. We clicked instantly and the rest is history! ✨</p>
+                </div>
+            </div>
+            <div class="col gs-reveal">
+                <div class="polaroid cute-polaroid auto-width">
+                    <div class="pushpin top-center"></div>
+                    <div class="polaroid-img auto-height">
+                        <img src="assets/0b311135-12e6-4a04-a086-01eb709531c2.jpg" alt="First Meet">
+                    </div>
+                    <div class="polaroid-caption">Day 1 Vibes! 📸</div>
+                    <!-- Cute extra sticker on polaroid -->
+                    <div class="mini-sticker star-sticker">⭐</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENT MEMORY SECTION -->
+        <section class="section layout-row">
+            <div class="col gs-reveal">
+                <div class="polaroid cute-polaroid tilt-right auto-width">
+                    <div class="washi pink-washi top-left"></div>
+                    <div class="polaroid-img auto-height">
+                        <img src="assets/nandha.jpg" alt="Event Memory">
+                    </div>
+                    <div class="polaroid-caption">Core Memory Unlocked! 🔒</div>
+                    <div class="mini-sticker heart-sticker">💖</div>
+                </div>
+            </div>
+            <div class="col gs-reveal">
+                <div class="torn-paper yellow-paper">
+                    <div class="paperclip side-clip"></div>
+                    <h2>That One Crazy Day! 🎢</h2>
+                     <strong>📍 Place:</strong> <span style="color:#ff8b94">NEC </span></p>
+                    <p>This was the moment I first saw you… 👀✨
+I never expected one random meeting
+to turn into so many beautiful memories. 💕
+Still one of my favorite coincidences ever. 🫶</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCRATCH TO REVEAL SECTION -->
+        <section class="section layout-row">
+            <div class="col gs-reveal">
+                <div class="torn-paper pastel-blue">
+                    <div class="paperclip side-clip"></div>
+                    <h2>UNUKU ONU SOLLANUM 🤫</h2>
+                    <p>I hide something extremely important here! You literally have to scratch off the gray area with your mouse (or finger) to reveal it. Don't hate me! 😂</p>
+                </div>
+            </div>
+            <div class="col gs-reveal">
+                <div class="polaroid cute-polaroid tilt-right scratch-container">
+                    <div class="pushpin top-center"></div>
+                    <div class="polaroid-img" style="position: relative; display: flex; align-items: center; justify-content: center; min-height: 300px;" id="secret-content">
+                        <!-- Secret Image underneath -->
+                        <img src="assets/MUTTAKOSSU !!.png" alt="Secret Reveal" style="max-width: 100%; max-height: 100%; object-fit: contain; pointer-events: none; user-select: none;">
+                        <!-- Canvas overlay that gets scratched off -->
+                        <canvas id="scratch-pad"></canvas>
+                    </div>
+                    <div class="polaroid-caption">Scratch Me! 🪙</div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- POLAROID 3 (CAKE) -->
+        <section class="section center-layout">
+            <div class="gs-reveal" style="position: relative;">
+                <!-- Doodle Stars -->
+                <svg class="doodle doodle-star" viewBox="0 0 100 100" style="top: -30px; left: -50px;">
+                    <path d="M50 0 L60 40 L100 50 L60 60 L50 100 L40 60 L0 50 L40 40 Z" fill="#fdfd96"/>
+                </svg>
+                
+                <div class="polaroid big-polaroid tilt-left">
+                    <div class="washi grid-washi top-center"></div>
+                    <div class="polaroid-img">
+                        <img src="assets/catgiftcake.png" alt="Cat Birthday Cake">
+                    </div>
+                    <div class="polaroid-caption" style="color: #fff; text-shadow: 2px 2px 5px rgba(0,0,0,0.9), 0 0 15px #ff8b94; font-size: 2.8rem; font-weight: bold; letter-spacing: 1px;">Cake vanga manam iruku ana panam illa 💰! 🎂</div>
+                    <button class="wish-btn" id="open-wish-modal">Make a Wish ✨</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER / SECRET -->
+        <section class="section footer-section">
+            <div class="gs-reveal">
+                <div class="torn-paper pink-paper text-center">
+                    <div class="pushpin top-center"></div>
+                    <button class="secret-btn" id="secret-btn">Click for a secret 💌</button>
+                    <div class="secret-message hidden" id="secret-message" style="position: relative; padding: 40px 20px; border-radius: 15px; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 250px; background: #000;">
+                        <!-- Transparent Image Background -->
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('assets/friend%20uuh.jpg') center/cover no-repeat; opacity: 0.5; z-index: 1;"></div>
+                        
+                        <!-- Text overlay -->
+                        <p style="position: relative; z-index: 2; font-family: 'Nunito', sans-serif; font-size: 1.5rem; font-weight: 900; color: #fff; text-shadow: 2px 2px 5px rgba(0,0,0,0.8), -1px -1px 4px rgba(0,0,0,0.5); text-align: center; margin: 0; line-height: 1.5;">
+                            I love you to the moon and back!<br>Thank you for being my best friend.<br>Happy Birthday Sharmila! 🌙💖🎉
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credit -->
+        <div class="credit-footer" style="text-align: center; padding: 50px 20px 60px; margin-top: 20px; position: relative; z-index: 10;">
+            <p style="font-family: 'Caveat', cursive; font-size: 2.2rem; font-weight: 700; color: #fff; background: linear-gradient(90deg, #ff8b94, #ffd3b6, #ffb7b2, #ff8b94); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: shine 3s linear infinite; letter-spacing: 2px; text-shadow: 0 0 15px rgba(255, 139, 148, 0.4); margin: 0; display: inline-block;">
+                ✨ Designed by Max for தோழி ✨
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Wish Modal -->
+    <div class="wish-modal-overlay" id="wish-modal">
+        <div class="wish-modal-content">
+            <button class="close-modal" id="close-wish-modal">&times;</button>
+            <h2 style="font-family: 'Caveat', cursive; font-size: 3rem; color: var(--hot-pink); margin-bottom: 10px;">Make Your Wish 🌟</h2>
+            <p style="margin-bottom: 15px; font-weight: bold; color: #666;">Type your birthday wish here. It'll fly straight to my email!</p>
+            <form id="wish-form">
+                <textarea id="wish-message" name="Message" rows="5" placeholder="Write your secret wish..." required></textarea>
+                <button type="submit" class="send-wish-btn" id="send-wish-btn">Send Wish 💌</button>
+            </form>
+            <p id="wish-status" class="wish-status" style="display: none; margin-top: 10px; font-weight: bold; color: var(--hot-pink);"></p>
+        </div>
+    </div>
+
+    <script src="script.js?v=12"></script>
+</body>
+</html>
